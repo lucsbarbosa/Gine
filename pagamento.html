@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gine - Snacks</title>
+    <link rel="stylesheet" href="styles/pagamento.css" />
+    <link rel="icon" href="images/icon.png">
+  </head>
+  <body>
+    <div id="pop-up">
+      <div class="overlay"></div>
+      <div class="content">
+        <img src="images/feito.png" alt="" />
+        <p>Compra efetuada! Veja seus pedidos clicando abaixo:</p>
+        <button onclick="window.location = 'pedidos.html'">Pedidos</button>
+      </div>
+    </div>
+    <header>
+      <img src="images/logo.png" id="logo" onclick="window.location = 'index.html'" />
+      <div class="progress-container">
+        <div class="progresspoint">
+          <div class="progress">1</div>
+          <p>Assentos</p>
+        </div>
+        <div class="progresspoint"">
+          <div class="progress">2</div>
+          <p>Ingressos</p>
+        </div>
+        <div class="progresspoint">
+          <div class="progress">3</div>
+          <p>Snacks</p>
+        </div>
+        <div class="progresspoint">
+          <div class="progress">4</div>
+          <p>Resumo</p>
+        </div>
+        <div class="progresspoint">
+          <div class="progress" style="background-color: var(--red);">5</div>
+          <p>Pagamento</p>
+        </div>
+      </div>
+    </header>
+    <section>
+      <h1>Como deseja realizar o pagamento?</h1>
+        <div id="pagamento">
+          <div id="esquerda">
+            <div id="total">Total: R$ 323,00</div>
+            <div id="metodo">
+              <div class="metodo"><img id="pix" src="images/pix.svg"></div>
+              <div class="metodo"><img id="cc" src="images/cc.svg"></div>
+              <span>PIX</span>
+              <span>Cartão de Crédito</span>
+            </div>
+          </div>
+          <div id="placeholder">Selecione um dos métodos</div>
+        </div>
+    </section>
+    <script>
+      const metodos = document.getElementsByClassName('metodo');
+      const placeholder = document.getElementById('placeholder');
+      const popUp = document.getElementById("pop-up");
+      const overlay = document.getElementsByClassName("overlay")[0];
+
+      metodos[1].addEventListener('click', () => {
+        placeholder.style.backgroundColor = 'var(--black)'
+        placeholder.innerHTML = `
+        <div class="Barra" style='margin:0'>
+            <h3 class="Nome">Nome</h3>
+            <input class='Barrainput' placeholder="Nome do titular"></input>
+        </div>
+        <div class="Barra">
+          <h3 class="Nome">Número</h3>
+          <input class='Barrainput' placeholder="Número do cartão"></input>
+      </div>
+    <div class="Barra">
+      <h3 class="Nome">Validade</h3>
+      <input class='Barrainput' type='month'></input>
+  </div>
+  <div class="Barra">
+    <h3 class="Nome">CVV</h3>
+    <input class='Barrainput' placeholder="Ex: 123"></input>
+</div>
+<button id="finalizar" onclick="popUp.style.display = 'flex';">Pagar</button>
+        </div>
+        `
+      })
+
+      overlay.addEventListener("click", () => {
+        popUp.style.display = "none";
+      });
+
+      metodos[0].addEventListener('click', () => {
+        placeholder.style.backgroundColor = 'var(--white)'
+        placeholder.innerHTML = `
+        <img src="images/qrcode.png" id='qrcode'>
+        <button id="copy">Copiar código <img src="images/copy.svg"></button>
+        `
+      })
+    </script>
+  </body>
+</html>

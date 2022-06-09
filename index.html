@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gine - Home</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="icon" href="images/icon.png">
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.png" alt="" />
+      <img src="images/search.png" alt="" class="search-icon" />
+      <input type="text" placeholder="Procure um filme" />
+      <div class="sign">
+        <p onclick="window.location = 'login.html'">Entrar</p>
+        <p onclick="window.location = 'cadastro.html'">Cadastro</p>
+      </div>
+    </header>
+    <main>
+      <div id="carousel">
+        <img src="images/movie-1.png" alt="" class="movie blur" />
+        <img src="images/movie-2.png" alt="" class="movie" />
+        <img src="images/movie-3.png" alt="" class="movie blur" />
+      </div>
+      <img src="images/left-control.png" alt="" id="left-control" />
+      <img src="images/right-control.png" alt="" id="right-control" />
+      <div class="dots">
+        <div class="dot"></div>
+        <div class="dot selected"></div>
+        <div class="dot"></div>
+      </div>
+      <h1>Veja os filmes em cartaz</h1>
+      <div class="banners">
+        <div>
+          <div class="overlay"></div>
+          <img src="images/banner1.jpg" alt="" />
+        </div>
+        <div>
+          <div class="overlay"></div>
+          <img src="images/banner2.jpg" alt="" />
+        </div>
+        <div>
+          <div class="overlay"></div>
+          <img src="images/banner3.jpg" alt="" />
+        </div>
+        <div>
+          <div
+            class="overlay"
+            onclick="window.location = 'moviePage.html'"
+          ></div>
+          <img src="images/banner4.jpg" alt="" />
+        </div>
+        <div>
+          <div class="overlay"></div>
+          <img src="images/banner5.jpg" alt="" />
+        </div>
+        <div>
+          <div class="overlay"></div>
+          <img src="images/banner6.jpg" alt="" />
+        </div>
+        <div>
+          <div class="overlay"></div>
+          <img src="images/banner7.jpg" alt="" />
+        </div>
+        <div>
+          <div class="overlay"></div>
+          <img src="images/banner8.jpg" alt="" />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>©Gine 2022 - Todos os direitos reservados</p>
+      <div class="socials">
+        <img src="images/twitter.png" alt="" onclick="window.location = 'https://twitter.com/GineCinema'" />
+        <img src="images/instagram.png" alt="" onclick="window.location = 'https://www.instagram.com/ginecinemas_oficial/'"/>
+        <img src="images/youtube.png" alt="" onclick="window.location = 'https://www.youtube.com/channel/UCrysG25MQISaiQEGl1PEbqg'"/>
+      </div>
+    </footer>
+    <script>
+      const carousel = document.getElementById("carousel");
+      const movies = document.getElementsByClassName("movie");
+      const leftCtrl = document.getElementById("left-control");
+      const rightCtrl = document.getElementById("right-control");
+      const dots = document.getElementsByClassName("dot");
+
+      let count = 0;
+
+      leftCtrl.addEventListener("click", () => {
+        if (count == 0) {
+          carousel.style.transform = "translateX(79rem)";
+          movies[0].classList.remove("blur");
+          movies[1].classList.add("blur");
+          dots[1].classList.remove("selected");
+          dots[0].classList.add("selected");
+          count = -1;
+        } else if (count == 1) {
+          carousel.style.transform = "translateX(0)";
+          movies[1].classList.remove("blur");
+          movies[0].classList.add("blur");
+          movies[2].classList.add("blur");
+          dots[2].classList.remove("selected");
+          dots[1].classList.add("selected");
+          count = 0;
+        } else if (count == -1) {
+          carousel.style.transform = "translateX(-79rem)";
+          movies[2].classList.remove("blur");
+          movies[0].classList.add("blur");
+          movies[1].classList.add("blur");
+          dots[0].classList.remove("selected");
+          dots[2].classList.add("selected");
+          count = 1;
+        }
+      });
+      rightCtrl.addEventListener("click", () => {
+        if (count == 0) {
+          carousel.style.transform = "translateX(-79rem)";
+          movies[2].classList.remove("blur");
+          movies[1].classList.add("blur");
+          dots[1].classList.remove("selected");
+          dots[2].classList.add("selected");
+          count = 1;
+        } else if (count == -1) {
+          carousel.style.transform = "translateX(0)";
+          movies[1].classList.remove("blur");
+          movies[0].classList.add("blur");
+          movies[2].classList.add("blur");
+          dots[0].classList.remove("selected");
+          dots[1].classList.add("selected");
+          count = 0;
+        } else if (count == 1) {
+          carousel.style.transform = "translateX(79rem)";
+          movies[0].classList.remove("blur");
+          movies[2].classList.add("blur");
+          movies[1].classList.add("blur");
+          dots[2].classList.remove("selected");
+          dots[0].classList.add("selected");
+          count = -1;
+        }
+      });
+    </script>
+  </body>
+</html>

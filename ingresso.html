@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gine - Ingressos</title>
+    <link rel="stylesheet" href="styles/ingresso.css" />
+    <link rel="icon" href="images/icon.png">
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.png" id="logo" onclick="window.location = 'index.html'" />
+      <div class="progress-container">
+        <div class="progresspoint">
+          <div class="progress">1</div>
+          <p>Assentos</p>
+        </div>
+        <div class="progresspoint"">
+          <div class="progress" style="background-color: var(--red);">2</div>
+          <p>Ingressos</p>
+        </div>
+        <div class="progresspoint">
+          <div class="progress">3</div>
+          <p>Snacks</p>
+        </div>
+        <div class="progresspoint">
+          <div class="progress">4</div>
+          <p>Resumo</p>
+        </div>
+        <div class="progresspoint">
+          <div class="progress">5</div>
+          <p>Pagamento</p>
+        </div>
+      </div>
+    </header>
+    <div id="divisor">
+      <aside>
+        <img src="images/banner4.jpg" id="capafilme" />
+        <h2 id="nomefilme">Doutor Estranho no Multiverso da Loucura</h2>
+        <table id="filmeinfo">
+          <tr>
+            <th>
+              <div class="info-container">
+                  <img src="images/data.png" />
+                  <p>Data</p>
+              </div>
+            </th>
+            <th>
+                <div class="info-container">
+                    <img src="images/local.png" />
+                    <p>Shopping</p>
+                </div>
+            </th>
+            <th>
+                <div class="info-container">
+                    <img src="images/hora.png" />
+                    <p>Horário</p>
+                </div>
+            </th>
+          </tr>
+          <tr>
+            <td>03/06</td>
+            <td>Villa Lobos</td>
+            <td>16:00</td>
+          </tr>
+        </table>
+        <p id="assentostitle">Assentos</p>
+        <table id="assentosinfo">
+          <tr>
+            <td id="f2a" class="idassento">C1</td>
+            <td class="tipoassento">Meia</td>
+            <td class="valorassento">R$11,99</td>
+          </tr>
+          <tr>
+            <td id="d8a" class="idassento">D8</td>
+            <td class="tipoassento">Meia</td>
+            <td class="valorassento">R$11,99</td>
+          </tr>
+          <tr>
+            <td id="a1a" class="idassento">A1</td>
+            <td class="tipoassento">Inteira</td>
+            <td class="valorassento">R$11,99</td>
+          </tr>
+        </table>
+        <p id="valortotal">Subtotal: R$34,65</p>
+      </aside>
+      <section class="container">
+        <h1 id="titulo">Selecione o tipo de ingresso de cada cadeira</h1>
+        <table id="assentoingresso">
+          <tr>
+            <td class="titleassento" style='border-radius: 1rem 0 0 1rem;'>Poltrona C1</td>
+            <td id="f2">Cadeira Normal</td>
+            <td>Inteira <input type="radio" class="checkbox"/></td>
+            <td>Meia <input type="radio" class="checkbox"/></td>
+            <td class="preçoingr"><p>R$21,99</p></td>
+          </tr>
+          <tr>
+            <td class="titleassento" style='border-radius: 1rem 0 0 1rem;'>Poltrona D8</td>
+            <td id="d8">Cadeira interativa</td>
+            <td>Inteira <input class="checkbox" type="radio" /></td>
+            <td>Meia <input class="checkbox" type="radio" /></td>
+            <td class="preçoingr"><p>R$21,99</p></td>
+          </tr>
+          <tr>
+            <td class="titleassento" style='border-radius: 1rem 0 0 1rem;'>Poltrona A1</td>
+            <td id="a1">Cadeira interativa</td>
+            <td>Inteira <input class="checkbox" type="radio" /></td>
+            <td>Meia <input class="checkbox" type="radio" /></td>
+            <td class="preçoingr"><p>R$21,99</p></td>
+          </tr>
+        </table>
+        <div class="btns">
+          <a id="voltar" onclick="window.location = 'assentos.html'">Voltar</a>
+          <a id="continuar" onclick="window.location = 'snacks.html'">Continuar</a>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

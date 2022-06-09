@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gine - Cadastro</title>
+    <link rel="stylesheet" href="styles/cadastro.css">
+    <link rel="icon" href="images/icon.png">
+</head>
+<body>
+<img id="ImagemLogo" src="images/logo.png" onclick="window.location = 'index.html'" />
+<div class="LOGIN">
+    <hr id="TracoLogin">
+    <h2>Cadastro</h2>
+    <hr id="TracoLogin">
+</div>
+<div class="Barra" style="margin-top: 4rem;">
+    <h3 id="Nome">Nome</h3>
+    <input id="Barranome" placeholder="Nome completo"></input>
+</div>
+<div class="Barra" style="margin: 2rem 0 1.6rem 0;">
+        <h3 id="Barravcpf">CPF</h3>
+        <input id="Barrabcpf" placeholder="Ex: 123.456.789-00"></input>
+        <h3 id="Barravnascimento">Data de nasc.</h3>
+        <input id="Barrabnascimento" type="date"></input>
+</div> 
+<div class="Barra">
+    <h3 id="Barravemail">E-mail</h3>
+    <input id="Barrabemail" placeholder="Endereço de e-mail"></input>
+    <h3 id="Barravsenha">Senha</h3>
+    <input id="Barrabsenha" type="password" placeholder="Senha de acesso"></input>
+</div>
+<button id="botao" type="button"><h4>Cadastrar</h4></button>
+<h4 id="entrar" style="display: flex; gap: .8rem;">Já tem uma conta?<a href="login.html">Entrar</a></h4>
+</body>
+</html>

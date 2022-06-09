@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gine - Snacks</title>
+    <link rel="stylesheet" href="styles/resumo.css" />
+    <link rel="icon" href="images/icon.png">
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.png" id="logo" onclick="window.location = 'index.html'" />
+      <div class="progress-container">
+        <div class="progresspoint">
+          <div class="progress">1</div>
+          <p>Assentos</p>
+        </div>
+        <div class="progresspoint"">
+          <div class="progress">2</div>
+          <p>Ingressos</p>
+        </div>
+        <div class="progresspoint">
+          <div class="progress">3</div>
+          <p>Snacks</p>
+        </div>
+        <div class="progresspoint">
+          <div class="progress" style="background-color: var(--red);">4</div>
+          <p>Resumo</p>
+        </div>
+        <div class="progresspoint">
+          <div class="progress">5</div>
+          <p>Pagamento</p>
+        </div>
+      </div>
+    </header>
+    <div id="divisor">
+      <div class="page-container">
+        <img src="images/banner4.jpg" id="capafilme" />
+        <section>
+          <h1 id="filmenome">Doutor Estranho no Multiverso da Loucura</h1>
+          <table id="filmeinfo">
+            <tr>
+              <th>
+                <div class="info-container">
+                    <img src="images/data.png" />
+                    <p>Data</p>
+                </div>
+              </th>
+              <th>
+                  <div class="info-container">
+                      <img src="images/local.png" />
+                      <p>Shopping</p>
+                  </div>
+              </th>
+              <th>
+                  <div class="info-container">
+                      <img src="images/hora.png" />
+                      <p>Horário</p>
+                  </div>
+              </th>
+            </tr>
+            <tr>
+              <td>03/06</td>
+              <td>Villa Lobos</td>
+              <td>16:00</td>
+            </tr>
+          </table>
+        
+          <div class="container">
+            <table id="assentos" style="background-color: #131313;">
+              <tr>
+                <th colspan="3">
+                  <div class="flex">
+                    <p>Assentos</p>
+                    <img style="cursor: pointer;" onclick="window.location = 'assentos.html'" src="images/editar.png" />
+                  </div>
+                </th>
+              </tr>
+              <tr>
+                <td style="color: var(--red);">Assento</td>
+                <td style="color: var(--red);">Ingresso</td>
+                <td style="color: var(--red);">Preço</td>
+              </tr>
+              <tr>
+                <td>C1</td>
+                <td>Meia</td>
+                <td>R$10,99</td>
+              </tr>
+              <tr>
+                <td>D8</td>
+                <td>Inteira</td>
+                <td>R$21,99</td>
+              </tr>
+              <tr>
+                <td>A1</td>
+                <td>Inteira</td>
+                <td>R$21,99</td>
+              </tr>
+            </table>
+            <table id="snacks" style="background-color: #131313;">
+              <tr>
+                <th colspan="3">
+                  <div class="flex">
+                    <p>Snacks</p>
+                    <img style="cursor: pointer;" onclick="window.location = 'snacks.html'" src="images/editar.png" />
+                  </div>
+                </th>
+              </tr>
+              <tr>
+                <td style="color: var(--red);">Produto</td>
+                <td style="color: var(--red);">Qtd</td>
+                <td style="color: var(--red);">Preço</td>
+              </tr>
+              <tr>
+                <td>Pepsi 200ml</td>
+                <td>2</td>
+                <td>R$10,99</td>
+              </tr>
+              <tr>
+                <td>Pipoca salgada</td>
+                <td>2</td>
+                <td>R$10,99</td>
+              </tr>
+              <tr>
+                <td>Doritos</td>
+                <td>1</td>
+                <td>R$15,99</td>
+              </tr>
+            </table>
+          </div>
+          <div class="total-container">
+              <p>Subtotal</p>
+              <p id="totalvalue">R$ 323,00</p>
+          </div>
+          <div class="finalizar-container"><a id="finalizar" href="pagamento.html">Finalizar</a></div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

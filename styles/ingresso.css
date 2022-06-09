@@ -1,0 +1,245 @@
+@import "global.css";
+
+* {
+  font-family: "Montserrat";
+}
+
+header {
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.4rem 9.6rem;
+}
+
+#divisor {
+  display: flex;
+  gap: 3.2rem;
+}
+
+#logo {
+  width: 181.69px;
+  height: 80px;
+  cursor: pointer;
+}
+
+#capafilme {
+  width: 181px;
+  height: 276px;
+  display: block;
+  margin-bottom: 1.6rem;
+}
+
+#nomefilme {
+  width: 349px;
+  height: 74px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+#filmeinfo {
+  font-size: 16px;
+  margin: 1.6rem 0 2.4rem 0;
+  text-align: center;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0.4rem;
+}
+
+#filmeinfo > tr,
+th,
+td {
+  padding: 0 2rem 0 2rem;
+  text-align: center;
+}
+
+#assentostitle {
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  align-items: center;
+  text-align: center;
+}
+
+#assentosinfo {
+  border-collapse: separate;
+  border-spacing: 16px 5px;
+  margin-top: 1.6rem;
+  font-size: 16px;
+}
+
+.idassento {
+  border-radius: 5px;
+  color: var(--black);
+  text-align: center;
+  padding: 0.8rem;
+}
+
+#f2a {
+  background-color: var(--white);
+  font-weight: bold;
+}
+
+#d8a,
+#a1a {
+  background-color: rgb(58, 58, 250);
+  color: var(--white);
+  font-weight: bold;
+  width: 50px;
+}
+
+#f2 {
+  background-color: #e7e7e7;
+  color: var(--black);
+}
+
+#d8,
+#a1 {
+  background-color: rgb(58, 58, 250);
+  color: var(--white);
+}
+
+.tipoassento {
+  width: 87px;
+  border-radius: 5px;
+  color: var(--white);
+  background-color: var(--red);
+}
+
+.valorassento {
+  border: 1px solid var(--red);
+  border-radius: 5px;
+}
+
+#valortotal {
+  position: sticky;
+  bottom: calc(100% - 95%);
+  font-size: 16px;
+  width: 181px;
+  height: 40.61px;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid var(--red);
+  color: var(--white);
+  background-color: var(--black);
+  margin: 2.4rem 0;
+}
+
+section {
+  padding-top: 1.6rem;
+  margin: 0 auto;
+}
+
+#titulo {
+  font-size: 32px;
+  font-weight: normal;
+}
+
+#assentoingresso {
+  margin: 1.6rem auto;
+  border-collapse: separate;
+  border-spacing: 0 1.6rem;
+}
+
+#assentoingresso td {
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 1.6rem 2.4rem;
+}
+
+#assentoingresso tr {
+  background-color: #131313;
+}
+
+.preçoingr {
+  border-radius: 0 1rem 1rem 0;
+  background-color: var(--red);
+}
+
+#continuar,
+#voltar {
+  font-size: 1.6rem;
+  width: 181px;
+  height: 42px;
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#continuar {
+  color: var(--white);
+  background-color: var(--red);
+}
+
+#voltar {
+  color: var(--black);
+  background-color: var(--white);
+}
+
+.btns {
+  display: flex;
+  gap: 32rem;
+  align-items: center;
+  margin-top: 12.5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.progresspoint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+}
+
+.progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  background-color: var(--white);
+  border-radius: 50%;
+  color: black;
+  text-align: center;
+}
+
+.progress ~ p {
+  font-size: 1.6rem;
+  margin-top: 0.8rem;
+}
+
+.progress-container {
+  display: flex;
+  gap: 4rem;
+  margin-right: 12rem;
+}
+
+aside {
+  height: calc(100vh - 12.8rem);
+  padding: 24rem 0 1.6rem 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+}

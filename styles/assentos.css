@@ -1,0 +1,252 @@
+@import "global.css";
+
+* {
+  font-family: "Montserrat";
+}
+
+header {
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.4rem 9.6rem;
+}
+
+#divisor {
+  display: flex;
+  gap: 3.2rem;
+}
+
+#logo {
+  width: 181.69px;
+  height: 80px;
+  cursor: pointer;
+}
+
+#capafilme {
+  width: 181px;
+  height: 276px;
+  display: block;
+  margin-bottom: 1.6rem;
+}
+
+#nomefilme {
+  width: 349px;
+  height: fit-content;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+#filmeinfo {
+  font-size: 16px;
+  margin: 1.6rem 0 2.4rem 0;
+  text-align: center;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0.4rem;
+}
+
+#filmeinfo > tr,
+th,
+td {
+  padding: 0 2rem 0 2rem;
+  text-align: center;
+}
+
+section {
+  padding-top: 1.6rem;
+  margin: 0 auto;
+}
+
+#continuar,
+#voltar {
+  font-size: 1.6rem;
+  width: 181px;
+  height: 42px;
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 0;
+}
+
+#continuar {
+  color: var(--white);
+  background-color: var(--red);
+}
+
+#voltar {
+  color: var(--black);
+  background-color: var(--white);
+}
+
+.btns {
+  display: flex;
+  gap: 32rem;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.progresspoint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+}
+
+.progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  background-color: var(--white);
+  border-radius: 50%;
+  color: black;
+  text-align: center;
+}
+
+.progress ~ p {
+  font-size: 1.6rem;
+  margin-top: 0.8rem;
+}
+
+.progress-container {
+  display: flex;
+  gap: 4rem;
+  margin-right: 12rem;
+}
+
+aside {
+  padding: 0 0 1.6rem 2.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+#titulo {
+  font-size: 32px;
+  font-weight: normal;
+}
+
+#assentos {
+  border-collapse: collapse;
+  margin: 1.6rem auto;
+}
+
+#assentos td {
+  padding: 0.5rem;
+}
+
+#assentos p {
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+  font-size: 1.6rem;
+}
+
+#tela {
+  border: 1px solid var(--red);
+  color: var(--red);
+}
+
+.common > td > p {
+  background-color: #e7e7e7;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.common > td > p:hover {
+  background-color: var(--red);
+}
+
+.special > td > p {
+  background-color: rgb(58, 58, 250);
+  cursor: pointer;
+}
+
+.special > td > p:hover {
+  background-color: var(--red);
+}
+
+.assentos-container {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  margin-top: 2rem;
+}
+
+.legendas {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.legenda {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.legenda > p {
+  font-size: 1.6rem;
+}
+
+.cor {
+  height: 2rem;
+  width: 2rem;
+  background-color: red;
+  border-radius: 1rem;
+}
+
+.occupied > td > p {
+  background-color: #a4a4a4;
+  color: var(--black);
+}
+
+.info {
+  cursor: pointer;
+  position: relative;
+  border: 1px solid var(--red);
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  color: var(--red);
+  text-align: center;
+  margin-left: 0.4rem;
+}
+
+.info:hover::before {
+  content: "Assentos que se movimentam conforme o filme, deixando sua experiência muito mais imersiva!";
+  position: absolute;
+  display: block;
+  height: 16rem;
+  width: 16rem;
+  top: -17rem;
+  right: 0;
+  bottom: 0;
+  left: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem 1rem 1rem 0;
+  background-color: #131313;
+}

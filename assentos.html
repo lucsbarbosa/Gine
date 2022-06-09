@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gine - Assentos</title>
+    <link rel="stylesheet" href="styles/assentos.css" />
+    <link rel="icon" href="images/icon.png">
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.png" id="logo" onclick="window.location = 'index.html'" />
+      <div class="progress-container">
+        <div class="progresspoint">
+          <div class="progress" style="background-color: var(--red);">1</div>
+          <p>Assentos</p>
+        </div>
+        <div class="progresspoint"">
+          <div class="progress">2</div>
+          <p>Ingressos</p>
+        </div>
+        <div class="progresspoint">
+          <div class="progress">3</div>
+          <p>Snacks</p>
+        </div>
+        <div class="progresspoint">
+          <div class="progress">4</div>
+          <p>Resumo</p>
+        </div>
+        <div class="progresspoint">
+          <div class="progress">5</div>
+          <p>Pagamento</p>
+        </div>
+      </div>
+    </header>
+    <div id="divisor">
+      <aside>
+        <img src="images/banner4.jpg" id="capafilme" />
+        <h2 id="nomefilme">Doutor Estranho no Multiverso da Loucura</h2>
+        <table id="filmeinfo">
+          <tr>
+            <th>
+              <div class="info-container">
+                  <img src="images/data.png" />
+                  <p>Data</p>
+              </div>
+            </th>
+            <th>
+                <div class="info-container">
+                    <img src="images/local.png" />
+                    <p>Shopping</p>
+                </div>
+            </th>
+            <th>
+                <div class="info-container">
+                    <img src="images/hora.png" />
+                    <p>Horário</p>
+                </div>
+            </th>
+          </tr>
+          <tr>
+            <td>03/06</td>
+            <td>Villa Lobos</td>
+            <td>16:00</td>
+          </tr>
+        </table>
+      </aside>
+      <section class="container">
+        <h1 id="titulo">Escolha seus assentos</h1>
+        <div class="assentos-container">
+            <table id="assentos">
+                <tr class="occupied">
+                    <td><p>E1</p></td>
+                    <td><p>E2</p></td>
+                    <td><p>E3</p></td>
+                    <td><p>E4</p></td>
+                    <td><p>E5</p></td>
+                    <td><p>E6</p></td>
+                    <td><p>E7</p></td>
+                    <td><p>E8</p></td>
+                </tr>
+                <tr class="special">
+                    <td><p>D1</p></td>
+                    <td><p>D2</p></td>
+                    <td><p>D3</p></td>
+                    <td><p>D4</p></td>
+                    <td><p>D5</p></td>
+                    <td><p>D6</p></td>
+                    <td><p>D7</p></td>
+                    <td><p>D8</p></td>
+                </tr>
+                <tr class="common">
+                    <td><p>C1</p></td>
+                    <td><p>C2</p></td>
+                    <td><p>C3</p></td>
+                    <td><p>C4</p></td>
+                    <td><p>C5</p></td>
+                    <td><p>C6</p></td>
+                    <td><p>C7</p></td>
+                    <td><p>C8</p></td>
+                </tr>
+                <tr class="common">
+                    <td><p>B1</p></td>
+                    <td><p>B2</p></td>
+                    <td><p>B3</p></td>
+                    <td><p>B4</p></td>
+                    <td><p>B5</p></td>
+                    <td><p>B6</p></td>
+                    <td><p>B7</p></td>
+                    <td><p>B8</p></td>
+                </tr>
+                <tr class="special">
+                    <td><p>A1</p></td>
+                    <td><p>A2</p></td>
+                    <td><p>A3</p></td>
+                    <td><p>A4</p></td>
+                    <td><p>A5</p></td>
+                    <td><p>A6</p></td>
+                    <td><p>A7</p></td>
+                    <td><p>A8</p></td>
+                </tr>
+                <tr><td></td></tr>
+                <tr>
+                    <td id="tela" colspan="8">
+                        <p>TELA</p>
+                    </td>
+                </tr>
+            </table>
+            <div class="legendas">
+                <div class="legenda">
+                    <div class="cor" style="background-color: #a4a4a4;"></div>
+                    <p>Ocupado</p>
+                </div>
+                <div class="legenda">
+                    <div class="cor" style="background-color: #e7e7e7;"></div>
+                    <p>Disponível</p>
+                </div>
+                <div class="legenda">
+                    <div class="cor" style="background-color: rgb(58, 58, 250);"></div>
+                    <p>Cadeira interativa</p>
+                    <p class="info">i</p>
+                </div>
+            </div>
+        </div>
+        <div class="btns">
+          <a id="voltar" onclick="window.location = 'moviePage.html'">Voltar</a>
+          <a id="continuar" onclick="window.location = 'ingresso.html'">Continuar</a>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
